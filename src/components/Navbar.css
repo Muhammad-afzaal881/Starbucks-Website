@@ -1,0 +1,48 @@
+/* Navbar main container */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 40px;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo / Title */
+.navbar h1 {
+  margin-right: auto;
+  font-size: 40px;
+  font-weight: bold;
+  color:white;
+}
+
+/* Links */
+.navbar a {
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+  margin: 13px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color:orange;
+}
+
+/* Button */
+.btn {
+   width: 120px;
+    height: 40px;
+    background-color:black;
+    border-color: orange;
+    color: orange;
+  cursor: pointer;
+  font-weight: bold;
+ 
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color:orange;
+  color:black;
+}

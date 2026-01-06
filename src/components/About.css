@@ -1,0 +1,66 @@
+h1{
+    color: white;
+}
+h3{
+    color: white;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+.third{
+     background: #050b18;
+    text-align: left;
+    margin-top: 60px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+}
+.left{
+    margin-left: 60px;
+    height: 300px;
+    width: auto;
+    margin-bottom: 70px;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  background-color: black; /* site background */
+}
+
+/* Image Left */
+.second img {
+  width: 30%;        /* 🔥 as requested */
+  height: 400px;     /* image apni ratio me rahe */
+  object-fit: cover;
+}
+
+/* Right Text Area */
+.second .text {
+  width: 70%;
+  color: white;
+
+  display: flex;           /* 🔥 */
+  flex-direction: column;  /* 🔥 h1 upar, h3 neeche */
+}
+
+
+/* Heading Top */
+.second .title h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Paragraph Below */
+.second h3 {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #dddddd;
+}
+
