@@ -4,7 +4,8 @@
   align-items: center;
   gap: 25px;
   padding: 15px 40px;
-  
+    flex-wrap: wrap; /* Isse cards niche wali line mein aa jayenge agar jagah kam hui */
+    justify-content: center; /* Cards ko center mein rakhne ke liye */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 

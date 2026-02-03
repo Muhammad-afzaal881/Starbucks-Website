@@ -4,7 +4,7 @@ import './About.css'
 import { Link } from "react-router-dom";
 function About(){
     return(
-    <main>
+    <div className='main'>
         <Navbar></Navbar>
         <div className='first'>
             <div className="text"  ></div>
@@ -51,7 +51,7 @@ function About(){
                </div>
                <h3>Copyright © 2026 CodeVista</h3>
             </div>
-    </main>
+    </div>
     )
 }
 export default About

@@ -1,66 +1,151 @@
-h1{
-    color: white;
-}
-h3{
-    color: white;
-}
-.text{
-    display: flex;
-    justify-content: center;
-}
-.third{
-     background: #050b18;
-    text-align: left;
-    margin-top: 60px;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    height: 600px;
-}
-.left{
-    margin-left: 60px;
-    height: 300px;
-    width: auto;
-    margin-bottom: 70px;
+/* --- Global Styles --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050b18; /* Theme color */
+    overflow-x: hidden; /* Mobile par side scrolling khatam karne ke liye */
 }
 
+h1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: #dddddd;
+    font-weight: 400;
+}
+
+/* --- First Section --- */
+.first {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* --- Second Section (Mission) --- */
 .second {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 60px;
-  background-color: black; /* site background */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+    background-color: black;
 }
 
-/* Image Left */
 .second img {
-  width: 30%;        /* 🔥 as requested */
-  height: 400px;     /* image apni ratio me rahe */
-  object-fit: cover;
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Right Text Area */
 .second .text {
-  width: 70%;
-  color: white;
-
-  display: flex;           /* 🔥 */
-  flex-direction: column;  /* 🔥 h1 upar, h3 neeche */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-
-/* Heading Top */
 .second .title h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-/* Paragraph Below */
-.second h3 {
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 400;
-  color: #dddddd;
+/* --- Third Section --- */
+.third {
+    background: #050b18;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px;
+    min-height: 500px; /* Fixed height ki jagah min-height behtar hai */
 }
 
+.left {
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.right img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* --- Fourth & Last Section --- */
+.fourth, .last {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.fourth img {
+    width: 50%;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ======================================================
+   MOBILE RESPONSIVE SETTINGS (Ab ye magic karega)
+   ====================================================== */
+
+@media (max-width: 768px) {
+    /* Sab sections ko column mein kar do */
+    .second, .third {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Images ko full width kar do */
+    .second img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .second .text {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .second .title h1 {
+        font-size: 30px;
+    }
+
+    /* Third section fix */
+    .left {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .right img {
+        width: 45%; /* Do images side by side mobile par */
+    }
+
+    /* Fourth section image */
+    .fourth img {
+        width: 90%;
+    }
+
+    /* Text breaks handling */
+    br {
+        display: none; /* Mobile par extra breaks hata deta hai */
+    }
+}
